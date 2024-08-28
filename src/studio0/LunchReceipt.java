@@ -13,9 +13,7 @@ public class LunchReceipt {
 		double taxRate = 0.04225;
 		double taxAmount = subtotal * taxRate;
 		double total = subtotal + taxAmount;
-		
+		total = Math.round(100.0*total)/100.0;
 		System.out.println("Your total was: $" + total);
 	}
-	
-	
 }
